@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="col-4 mt-3">
+        <h1 class="display-4 text-primary mb-3 pb-3">Login</h1>
+        <form class="form form-group form-dark ">
+            <div>
+                <input type="text" class="form-control" name="userName" id="userName" class="form-control mb-3"
+                    placeholder="Enter username" autoFocus required />
+                <input type="password" class="form-control" name="password" id="password" class="form-control mb-3"
+                    placeholder="Enter password" required />
+
+                <div class="form-group">
+                    <select class="form-control mb-3" name="role" id="role">
+                        <option value="Role">Select a role</option>
+                        <option value="ADMIN">ADMIN</option>
+                        <option value="EMPLOYEE">EMPLOYEE</option>
+                        <option value="MANAGER">MANAGER</option>
+                    </select>
+                </div>
+                <input type="submit" id="submit" name="submit" class="form-control btn btn-primary mb-3"
+                    value="Login" />
+            </div>
+        </form>
+        <div class="btn btn-primary col-12" routerLink="/register">Not yet registered? Register</div>
+    </div>
+</div>

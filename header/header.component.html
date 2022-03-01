@@ -1,0 +1,31 @@
+<header class="header sticky-top">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <div class="navbar-brand" routerLink="/home" routerLinkActive="active">
+                <img src="https://www.capgemini.com/wp-content/themes/capgemini-komposite/assets/images/logo.svg"
+                    height="24px" alt="Capgemini" />
+            </div>
+            <!-- more links  -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/employee" routerLinkActive="active">Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/user" routerLinkActive="active">User</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" routerLink="/login" routerLinkActive="active">Login</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" routerLink="/register" routerLinkActive="active">Register</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<router-outlet></router-outlet>

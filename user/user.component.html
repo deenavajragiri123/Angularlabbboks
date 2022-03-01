@@ -1,0 +1,19 @@
+<div class="container ">
+    <div class="bg-white shadow col-4 mt-3 mb-3 pt-3 pb-3">
+        <div class="mt-3">
+            <h1 class="display-4 text-primary mb-3 pb-3">User</h1>
+        </div>
+        <div class="">
+            <form class="form form-group">
+                <input class="form-control" type="number" [(ngModel)]="userIdInput" name="userIdInput"
+                    placeholder="Please Enter UserId">
+                <input class="form-control btn btn-primary mt-3" type="submit" (click)="getUser()" value="Find User">
+            </form>
+        </div>
+        <div>
+            <p> The username is: {{ appUser.username }} </p>
+            <p>{{ appUser | json }}</p>
+        </div>
+
+    </div>
+</div>
